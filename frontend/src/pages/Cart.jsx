@@ -12,6 +12,7 @@ const Cart = () => {
     removeAllFromCart,
     addToRecipeBoxFromCart,
     createOrder,
+    backendUrl,
   } = useContext(AppContext);
 
   const [selectedItems, setSelectedItems] = useState([]);
@@ -50,10 +51,8 @@ const Cart = () => {
 
       const total = listItems.reduce((sum, item) => sum + item.price, 0);
 
-      
       await createOrder(listItems, total);
 
-      
       selectedItemsRef.current.forEach((id) => {
         removeAllFromCart(id);
         addToRecipeBoxFromCart(id);
@@ -84,7 +83,7 @@ const Cart = () => {
     if (isOpen) exit();
 
     try {
-      const response = await fetch("http://localhost:4000/api/payment", {
+      const response = await fetch(`${backendUrl}/api/payment`, {
         method: "POST",
         body: JSON.stringify({ items: selectedItems }),
         headers: {
