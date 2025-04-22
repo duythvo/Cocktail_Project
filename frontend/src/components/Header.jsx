@@ -27,7 +27,7 @@ const Header = () => {
       {/*Right Section*/}
       <div className="hidden w-full lg:block lg:rounded-r-4xl lg:w-[50%]">
         <img
-          src={asesets.header3}
+          src={asesets.phache}
           alt=""
           className="lg:rounded-r-4xl w-full h-[650px] object-cover"
         />

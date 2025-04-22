@@ -10,7 +10,7 @@ const Content = () => {
       {/**Left */}
       <div className="hidden w-full lg:block lg:rounded-l-4xl lg:w-[50%]">
         <img
-          src={asesets.phache}
+          src={asesets.header3}
           alt=""
           className="lg:rounded-l-4xl w-full h-[650px] object-cover"
         />
