@@ -11,17 +11,16 @@ const Header = () => {
       {/*Left Section*/}
       <div className="p-5 md:p-10 flex flex-col gap-10 lg:w-[50%]">
         <h1 className="text-5xl text-wrap font-bold w-full lg:w-[80%] xl:w-[70%] leading-15">
-          Welcome to the Cocktail Island
+          Cocktail tutorial
         </h1>
-        <p className="text-md w-full lg:w-[70%]">
-          Welcome to our Cocktail Mixing Guide – your one-stop destination to
-          master the art of cocktail making! Whether you're an absolute beginner
-          looking to craft your first drink or an experienced bartender seeking
-          new inspiration, we’ve got you covered. Our website features a
-          comprehensive collection of easy-to-follow cocktail recipes, tips, and
-          techniques to help you create the most delicious and visually stunning
-          cocktails.
+        <p className="text-lg w-full lg:w-[70%]">
+          Cocktail Land is your ultimate destination for learning how to craft
+          delicious cocktails — from classic favorites to unique modern blends.
+          Whether you're a beginner or an aspiring mixologist, our platform
+          offers: <br />🧪 Step-by-step cocktail recipes <br />🎥 Visual guides and tips <br /> 📸
+          Beautiful images and ingredient info 
         </p>
+        <button onClick={() => navigate("/recipes")} className="bg-black p-3 text-white w-40 rounded-xl cursor-pointer">View Recipes</button>
       </div>
 
       {/*Right Section*/}
