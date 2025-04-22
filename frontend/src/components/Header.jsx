@@ -13,7 +13,7 @@ const Header = () => {
         <h1 className="text-5xl text-wrap font-bold w-full lg:w-[80%] xl:w-[70%] leading-15">
           Cocktail tutorial
         </h1>
-        <p className="text-lg w-full lg:w-[70%]">
+        <p className="text-2xl w-full lg:w-[70%]">
           Cocktail Land is your ultimate destination for learning how to craft
           delicious cocktails — from classic favorites to unique modern blends.
           Whether you're a beginner or an aspiring mixologist, our platform
